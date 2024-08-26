@@ -28,7 +28,17 @@ class ViewController: UIViewController {
         // Добавляем градиент на view
         self.view.layer.insertSublayer(gradientLayer, at: 0)
     }
-
+    //переход на вторую страницу
+    @IBAction func showVC1(_ sender: Any) {
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        let viewController = storyboard.instantiateViewController(identifier: "ViewController1")
+        
+        self.present(viewController, animated: true, completion: nil)
+        
+    }
+    
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         // Обновляем размер градиента, чтобы он соответствовал размеру view
@@ -50,6 +60,11 @@ extension UIColor {
         let blue = CGFloat(rgb & 0x0000FF) / 255.0
 
         self.init(red: red, green: green, blue: blue, alpha: 1.0)
+        
+        
+        
+        
+        
     }
 }
 
