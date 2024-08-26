@@ -17,7 +17,7 @@ class ViewController2: UIViewController {
 
     @IBAction func TapMe(_ sender: Any) {
         num += 1
-//        resultCooins.text = "\(num)"
+        coinsLabel.text = "\(num)"
         
         // Сохраняем текущее значение num в UserDefaults
         UserDefaults.standard.set(num, forKey: "savedCoins")
@@ -26,19 +26,19 @@ class ViewController2: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
       
-//        // Загружаем сохраненное значение при открытии приложения
-//       num = UserDefaults.standard.integer(forKey: "savedCoins")
-//        resultCooins.text = "\(num)"
-//        
-//        let color1 = UIColor(hex: "8CC0F1")?.cgColor ?? UIColor.clear.cgColor
-//        let color2 = UIColor(hex: "C0DAB7")?.cgColor ?? UIColor.clear.cgColor
-//
-//        gradientLayer.colors = [color1, color2]
-//
-//        gradientLayer.startPoint = CGPoint(x: 0, y: 0)
-//        gradientLayer.endPoint = CGPoint(x: 0, y: 1)
-//
-//        self.view.layer.insertSublayer(gradientLayer, at: 0)
+       // Загружаем сохраненное значение при открытии приложения
+       num = UserDefaults.standard.integer(forKey: "savedCoins")
+        coinsLabel.text = "\(num)"
+        
+        let color1 = UIColor(hex: "8CC0F1")?.cgColor ?? UIColor.clear.cgColor
+        let color2 = UIColor(hex: "C0DAB7")?.cgColor ?? UIColor.clear.cgColor
+
+        gradientLayer.colors = [color1, color2]
+
+        gradientLayer.startPoint = CGPoint(x: 0, y: 0)
+        gradientLayer.endPoint = CGPoint(x: 0, y: 1)
+
+        self.view.layer.insertSublayer(gradientLayer, at: 0)
     }
     
     override func viewDidLayoutSubviews() {

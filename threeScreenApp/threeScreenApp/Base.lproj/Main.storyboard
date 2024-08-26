@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="TWQ-zP-GgE">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="IVC-07-hjT">
-                                <rect key="frame" x="20" y="60" width="335" height="597"/>
+                                <rect key="frame" x="20" y="104" width="335" height="553"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="rwX-KY-8tU">
                                         <rect key="frame" x="0.0" y="0.0" width="335" height="77"/>
@@ -57,7 +57,7 @@ your tasks, convert units of measurement</string>
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="BOE-kc-yDd">
-                                        <rect key="frame" x="0.0" y="194.5" width="335" height="230"/>
+                                        <rect key="frame" x="0.0" y="172.5" width="335" height="230"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="xBf-OJ-4D4">
                                                 <rect key="frame" x="10" y="0.0" width="315" height="22"/>
@@ -140,7 +140,7 @@ your tasks, convert units of measurement</string>
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="pLA-Ub-jL8">
-                                        <rect key="frame" x="10" y="542" width="315" height="55"/>
+                                        <rect key="frame" x="10" y="498" width="315" height="55"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pHg-Xy-APV">
                                                 <rect key="frame" x="0.0" y="0.0" width="315" height="55"/>
@@ -180,10 +180,11 @@ your tasks, convert units of measurement</string>
                             <constraint firstItem="IVC-07-hjT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="qLa-Si-jI1"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="FVY-Vs-ph5"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="101.44927536231884" y="2.6785714285714284"/>
+            <point key="canvasLocation" x="1039.2" y="2.2488755622188905"/>
         </scene>
         <!--View Controller1-->
         <scene sceneID="qXh-wI-fhN">
@@ -335,12 +336,12 @@ your tasks, convert units of measurement</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AGH-pa-AYL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="815.20000000000005" y="1.4778325123152709"/>
+            <point key="canvasLocation" x="1754.4000000000001" y="1.3493253373313345"/>
         </scene>
         <!--View Controller2-->
         <scene sceneID="Cgs-HW-XdH">
             <objects>
-                <viewController storyboardIdentifier="ViewController2" id="CMo-7g-ppE" customClass="ViewController2" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController2" id="CMo-7g-ppE" customClass="ViewController2" customModule="threeScreenApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WLL-kd-FcA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -376,7 +377,7 @@ your tasks, convert units of measurement</string>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8pd-c6-cuz">
-                                <rect key="frame" x="166" y="134" width="42" height="21"/>
+                                <rect key="frame" x="166" y="136" width="42" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -398,7 +399,25 @@ your tasks, convert units of measurement</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kbP-qp-CyO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1516" y="1"/>
+            <point key="canvasLocation" x="2455.1999999999998" y="0.44977511244377816"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="F2k-3x-TaT">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="TWQ-zP-GgE" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="r6P-AM-gJ4">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="f3Y-4W-Yzm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mHh-jH-p8a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="100" y="2.2488755622188905"/>
         </scene>
     </scenes>
     <resources>

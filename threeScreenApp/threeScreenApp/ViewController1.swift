@@ -58,7 +58,9 @@ class ViewController1: UIViewController {
     @IBAction func ShowVC2(_ sender: Any) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let viewController2 = storyboard.instantiateViewController(identifier: "ViewController2")
-        self.present(viewController2, animated: true, completion: nil)
+//        self.present(viewController2, animated: true, completion: nil)
+        
+        setRootViewController(viewController2)
         
     }
     

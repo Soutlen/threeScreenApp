@@ -35,7 +35,9 @@ class ViewController: UIViewController {
         
         let viewController = storyboard.instantiateViewController(identifier: "ViewController1")
         
-        self.present(viewController, animated: true, completion: nil)
+//        self.present(viewController, animated: true, completion: nil)
+        
+        navigationController?.pushViewController(viewController, animated: true)
         
     }
     
