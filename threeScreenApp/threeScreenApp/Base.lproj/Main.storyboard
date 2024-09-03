@@ -12,7 +12,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="threeScreenApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="threeScreenApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -194,34 +194,22 @@ your tasks, convert units of measurement</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ap0-Sq-jU9">
-                                <rect key="frame" x="20" y="55" width="200" height="36"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="Back Account Creation">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="showVC0:" destination="3PE-IB-e7W" eventType="touchUpInside" id="Xll-3d-9me"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UtI-ek-OwH">
-                                <rect key="frame" x="124" y="217" width="127" height="36"/>
+                                <rect key="frame" x="124" y="245" width="127" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Choose avatar">
                                     <color key="titleColor" systemColor="tintColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="changeAvatarImadge:" destination="3PE-IB-e7W" eventType="touchUpInside" id="7Rt-z3-JHI"/>
+                                    <action selector="changeAvatarImage:" destination="3PE-IB-e7W" eventType="touchUpInside" id="3FD-6e-4Ue"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="firstImage" translatesAutoresizingMaskIntoConstraints="NO" id="t28-Xm-qBc">
-                                <rect key="frame" x="141.5" y="117" width="92" height="92"/>
+                                <rect key="frame" x="127.5" y="117" width="120" height="120"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="92" id="WAz-kO-3eM"/>
-                                    <constraint firstAttribute="height" constant="92" id="YH4-QD-Mm3"/>
+                                    <constraint firstAttribute="width" constant="120" id="WAz-kO-3eM"/>
+                                    <constraint firstAttribute="height" constant="120" id="YH4-QD-Mm3"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xvW-qX-utd">
@@ -232,12 +220,12 @@ your tasks, convert units of measurement</string>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Continue" cornerStyle="capsule"/>
                                 <connections>
-                                    <action selector="ShowVC2:" destination="3PE-IB-e7W" eventType="touchUpInside" id="crw-L5-rJf"/>
                                     <action selector="showVC1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="E4M-XA-F7U"/>
+                                    <action selector="showVC2:" destination="3PE-IB-e7W" eventType="touchUpInside" id="Qx3-oh-iJX"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="gIk-iG-tE1">
-                                <rect key="frame" x="20" y="261" width="335" height="181"/>
+                                <rect key="frame" x="20" y="289" width="335" height="181"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="b2n-XJ-OWz">
                                         <rect key="frame" x="0.0" y="0.0" width="167" height="25"/>
@@ -318,16 +306,14 @@ your tasks, convert units of measurement</string>
                             <constraint firstItem="UtI-ek-OwH" firstAttribute="top" secondItem="t28-Xm-qBc" secondAttribute="bottom" constant="8" id="0lM-4W-TTs"/>
                             <constraint firstItem="t28-Xm-qBc" firstAttribute="centerX" secondItem="skz-jO-Tk9" secondAttribute="centerX" id="1Ik-Dp-Uaj"/>
                             <constraint firstItem="xvW-qX-utd" firstAttribute="leading" secondItem="skz-jO-Tk9" secondAttribute="leading" constant="20" id="6b0-vz-svI"/>
-                            <constraint firstItem="Ap0-Sq-jU9" firstAttribute="top" secondItem="agy-YT-NYX" secondAttribute="top" constant="55" id="Cpq-Zf-tGB"/>
-                            <constraint firstItem="t28-Xm-qBc" firstAttribute="top" secondItem="Ap0-Sq-jU9" secondAttribute="bottom" constant="26" id="MhJ-gf-tVr"/>
                             <constraint firstAttribute="trailing" secondItem="xvW-qX-utd" secondAttribute="trailing" constant="20" id="UoZ-2M-fEe"/>
                             <constraint firstItem="skz-jO-Tk9" firstAttribute="trailing" secondItem="gIk-iG-tE1" secondAttribute="trailing" constant="20" id="V7o-er-GoT"/>
                             <constraint firstItem="UtI-ek-OwH" firstAttribute="centerX" secondItem="skz-jO-Tk9" secondAttribute="centerX" id="VNG-ft-yzc"/>
                             <constraint firstItem="gIk-iG-tE1" firstAttribute="leading" secondItem="skz-jO-Tk9" secondAttribute="leading" constant="20" id="b4f-7b-PzM"/>
                             <constraint firstItem="skz-jO-Tk9" firstAttribute="bottom" secondItem="xvW-qX-utd" secondAttribute="bottom" constant="20" id="dg7-yg-27u"/>
-                            <constraint firstItem="Ap0-Sq-jU9" firstAttribute="leading" secondItem="agy-YT-NYX" secondAttribute="leading" constant="20" id="fAC-tn-84b"/>
                             <constraint firstItem="gIk-iG-tE1" firstAttribute="centerX" secondItem="skz-jO-Tk9" secondAttribute="centerX" id="mz9-k7-Jj0"/>
                             <constraint firstItem="gIk-iG-tE1" firstAttribute="top" secondItem="UtI-ek-OwH" secondAttribute="bottom" constant="8" id="oYA-7U-UFg"/>
+                            <constraint firstItem="t28-Xm-qBc" firstAttribute="top" secondItem="skz-jO-Tk9" secondAttribute="top" constant="97" id="rd8-Xa-rG4"/>
                         </constraints>
                     </view>
                     <connections>
@@ -348,15 +334,18 @@ your tasks, convert units of measurement</string>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your count of coins:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jHi-wt-4GU">
                                 <rect key="frame" x="20" y="75" width="202" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="27" id="VqU-4I-KHx"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="23"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q8X-V7-DIY">
-                                <rect key="frame" x="79.5" y="228.5" width="216" height="216"/>
+                                <rect key="frame" x="85.5" y="241.5" width="204" height="204"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="216" id="CQQ-bC-JKJ"/>
-                                    <constraint firstAttribute="height" constant="216" id="If8-bk-hN7"/>
+                                    <constraint firstAttribute="width" constant="204" id="3zh-cF-hjz"/>
+                                    <constraint firstAttribute="height" constant="204" id="8DV-Yc-Aux"/>
                                 </constraints>
                                 <color key="tintColor" red="0.42179170250892639" green="0.94276291131973267" blue="0.11028733104467392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Button"/>
@@ -364,7 +353,8 @@ your tasks, convert units of measurement</string>
                                     <attributedString key="attributedSubtitle">
                                         <fragment content="Tap">
                                             <attributes>
-                                                <font key="NSFont" size="40" name="Helvetica"/>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <font key="NSFont" size="65" name="Helvetica"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                             </attributes>
                                         </fragment>
@@ -376,10 +366,12 @@ your tasks, convert units of measurement</string>
                                     <action selector="TapMe:" destination="CMo-7g-ppE" eventType="touchUpInside" id="ZjW-Vh-LOC"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8pd-c6-cuz">
-                                <rect key="frame" x="166" y="136" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8pd-c6-cuz">
+                                <rect key="frame" x="50" y="136" width="275" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ge4-mh-QYY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -387,10 +379,13 @@ your tasks, convert units of measurement</string>
                         <viewLayoutGuide key="safeArea" id="bCc-iJ-dsQ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="8pd-c6-cuz" firstAttribute="leading" secondItem="bCc-iJ-dsQ" secondAttribute="leading" constant="50" id="1jf-C6-fPg"/>
                             <constraint firstItem="Q8X-V7-DIY" firstAttribute="centerX" secondItem="bCc-iJ-dsQ" secondAttribute="centerX" id="FUJ-zf-uGm"/>
-                            <constraint firstItem="Q8X-V7-DIY" firstAttribute="centerY" secondItem="bCc-iJ-dsQ" secondAttribute="centerY" constant="-7" id="Ltj-Nc-1L8"/>
+                            <constraint firstItem="8pd-c6-cuz" firstAttribute="top" secondItem="jHi-wt-4GU" secondAttribute="bottom" constant="34" id="SEa-lG-hi7"/>
                             <constraint firstItem="jHi-wt-4GU" firstAttribute="leading" secondItem="bCc-iJ-dsQ" secondAttribute="leading" constant="20" id="hxd-kX-fDN"/>
+                            <constraint firstItem="Q8X-V7-DIY" firstAttribute="centerY" secondItem="bCc-iJ-dsQ" secondAttribute="centerY" id="owb-yS-mYa"/>
                             <constraint firstItem="jHi-wt-4GU" firstAttribute="top" secondItem="bCc-iJ-dsQ" secondAttribute="top" constant="55" id="pcm-MN-LPy"/>
+                            <constraint firstItem="bCc-iJ-dsQ" firstAttribute="trailing" secondItem="8pd-c6-cuz" secondAttribute="trailing" constant="50" id="z2L-vY-TQj"/>
                         </constraints>
                     </view>
                     <connections>

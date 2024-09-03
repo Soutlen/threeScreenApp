@@ -1,15 +1,8 @@
-//
-//  UIViewController+Extensions.swift
-//  threeScreenApp
-//
-//  Created by Soutlen on 26.08.2024.
-//
-
 import UIKit
 
 extension UIViewController {
     func setRootViewController(_ vc: UIViewController, animation: UIView.AnimationOptions = .transitionCrossDissolve) {
-        guard let window = UIApplication.shared.keyWindow else {
+        guard let window = UIApplication.shared.windows.first(where: { $0.isKeyWindow }) else {
             return
         }
 
@@ -20,9 +13,7 @@ extension UIViewController {
             window.rootViewController = nil
             window.rootViewController = vc
         }, completion: { completed in
-            // Optional completion handler
+            // Optional completion code
         })
-
     }
 }
-
